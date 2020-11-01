@@ -11,16 +11,3 @@ const options = yargs
 const instruction = `curl -u '${options.username}' https://api.github.com/user/repos -d '{"name":"${options.repo}"}'`;
 
 console.log(instruction);
-
-// const params = new URLSearchParams();
-// params.append("name", options.repo);
-// (async () => {
-//     const response = await fetch(`https://api.github.com/user/repos`, {method: 'POST', body: params});
-//     const json = await response.json();
-
-//     if(json.message) {
-//         console.log(json.message);
-//     } else {
-//         console.log(json);
-//     }
-// })();
