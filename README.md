@@ -8,7 +8,7 @@ Githuso = Git + thuso. "Thuso" is a seSotho (one of 11 official languages in Sou
 
 ### Installation and Usage
 
-You can use npm to download githuso:
+You can use npm to install githuso:
 
 ```
 npm install -g githuso
@@ -25,3 +25,17 @@ The command above will return somthing like:
 ```
 curl -u 'goodmanluphondo' https://api.github.com/user/repos -d '{"name":"newrepo"}'
 ```
+
+Once you have created your new repo, you will need to add an origin to your local repo. Run the following command and githuso will help you with one.
+
+```
+githuso -u goodmanluphondo -r newrepo --origin
+```
+
+You will then get a command to add an origin to your local repo.
+
+```
+git remote add origin git@github.com:goodmanluphondo/newrepo.git
+```
+
+And... Just like that, you will be set up and ready to go.
