@@ -20,7 +20,7 @@ Giving githuso your username and repo name, it will return cURL script to run on
 githuso -u goodmanluphondo -r newrepo
 ```
 
-The command above will return somthing like:
+The command above will return something like:
 
 ```
 curl -u 'goodmanluphondo' https://api.github.com/user/repos -d '{"name":"newrepo"}'
